@@ -1,18 +1,23 @@
 package command.concretecommand;
 
 import command.Commandable;
-import command.receiver.abstractReciver;
-
+import command.receiver.Reciver;
 public class ConcreteCommand extends abstractConcreteCommand {
     @Override
     public boolean execute(Commandable command) {
-        return false;
+      try {
+          this .Reciver();
+          return  true;
+      }catch (Exception e){
+          e.printStackTrace();
+          throw e;
+      }
     }
-
 
     @Override
-    boolean Reciver(abstractReciver abstractReciver) {
-
-        return false;
+    boolean Reciver() {
+        Reciver reciver  = new Reciver();
+        return true;
     }
+
 }
