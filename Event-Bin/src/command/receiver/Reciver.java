@@ -1,6 +1,6 @@
 package command.receiver;
 
-public class Reciver extends  abstractReciver{
+public class Reciver extends abstractReciver{
     @Override
     boolean InitCommand() {
         return false;
