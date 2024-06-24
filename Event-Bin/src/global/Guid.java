@@ -1,4 +1,4 @@
-package event.repository.entity;
+package global;
 
 public class Guid {
     

@@ -1,7 +1,7 @@
 package event.repository;
 
 import event.repository.entity.ColumnType;
-import event.repository.entity.Guid;
+import global.Guid;
 
 public class Event {
     private ColumnType type;

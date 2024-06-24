@@ -1,6 +1,6 @@
 package command.client;
 
-import event.repository.entity.Guid;
+import global.Guid;
 
 public class InventoryDeactivedEvent {
     public final Guid inventoryDeactivedEventId;
@@ -9,4 +9,5 @@ public class InventoryDeactivedEvent {
         this.inventoryDeactivedEventId = inventoryDeactivedEventId;
         this.Comment = comment;
     }
+
 }
