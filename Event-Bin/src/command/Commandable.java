@@ -1,5 +1,7 @@
 package command;
 
+import command.entity.Command;
+
 public interface Commandable {
-    boolean execute(Commandable command);
+    boolean execute(Command command);
 }

@@ -1,18 +1,22 @@
 package command.receiver;
 
+import command.entity.Command;
+
 public class Reciver extends abstractReciver{
+    public Reciver(Command command) {
+        this.InitCommand(command);
+    }
     @Override
-    boolean InitCommand() {
+     boolean InitCommand(Command command) {
+        return false;
+    }
+    @Override
+   public boolean DestroyedCommand() {
         return false;
     }
 
     @Override
-    boolean DestroyedCommand() {
-        return false;
-    }
-
-    @Override
-    boolean WithdrawCommand() {
+    public boolean WithdrawCommand() {
         return false;
     }
 }

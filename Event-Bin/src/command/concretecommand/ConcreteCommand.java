@@ -1,10 +1,11 @@
 package command.concretecommand;
 
 import command.Commandable;
+import command.entity.Command;
 import command.receiver.Reciver;
 public class ConcreteCommand extends abstractConcreteCommand {
     @Override
-    public boolean execute(Commandable command) {
+    public boolean execute(Command command) {
       try {
           this .Reciver();
           return  true;
@@ -16,7 +17,7 @@ public class ConcreteCommand extends abstractConcreteCommand {
 
     @Override
     boolean Reciver() {
-        Reciver reciver  = new Reciver();
+       // Reciver reciver  = new Reciver();
         return true;
     }
 

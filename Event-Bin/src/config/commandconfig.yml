@@ -1,2 +1,4 @@
-name:
-IP: 127.0.0.1
+ip: 127.0.0.1
+name: root
+password: 123456
+receiver: ["dataverse"]
